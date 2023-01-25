@@ -52,6 +52,7 @@ h2 {
   width: 50%;
   padding: 2rem;
   text-align: center;
+  clear: both;
 }
 @media (min-width:768px) {
   .lista-productos li {
