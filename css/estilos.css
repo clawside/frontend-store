@@ -14,12 +14,30 @@ body {
   color: white;
   height: 100%;
   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#e570e7+0,c85ec7+48,a849a3+100,a849a3+100 */
-background: #e570e7; /* Old browsers */
-background: -moz-linear-gradient(top,  #e570e7 0%, #c85ec7 48%, #a849a3 100%, #a849a3 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top,  #e570e7 0%,#c85ec7 48%,#a849a3 100%,#a849a3 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom,  #e570e7 0%,#c85ec7 48%,#a849a3 100%,#a849a3 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e570e7', endColorstr='#a849a3',GradientType=0 ); /* IE6-9 */
-background-attachment: fixed;
+  background: #e570e7; /* Old browsers */
+  background: -moz-linear-gradient(
+    top,
+    #e570e7 0%,
+    #c85ec7 48%,
+    #a849a3 100%,
+    #a849a3 100%
+  ); /* FF3.6-15 */
+  background: -webkit-linear-gradient(
+    top,
+    #e570e7 0%,
+    #c85ec7 48%,
+    #a849a3 100%,
+    #a849a3 100%
+  ); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    #e570e7 0%,
+    #c85ec7 48%,
+    #a849a3 100%,
+    #a849a3 100%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e570e7', endColorstr='#a849a3',GradientType=0 ); /* IE6-9 */
+  background-attachment: fixed;
 }
 
 header {
@@ -45,7 +63,7 @@ h2 {
 }
 .lista-productos {
   padding: 0;
-  list-style: none; 
+  list-style: none;
 }
 .lista-productos li {
   float: left;
@@ -53,26 +71,24 @@ h2 {
   padding: 2rem;
   text-align: center;
 }
-
-.lista-productos li:nth-last-child(2n+1) {
-  clear: unset;
+.lista-productos li:nth-child(2n+1) {
+  clear: both;
 }
 
-@media (min-width: 768px) {
+@media (min-width:768px) {
   .lista-productos li {
     width: 33.3%;
-  },
-  .lista-productos li:nth-last-child(2n+1) {
+  }
+  .lista-productos li:nth-child(2n+1) {
     clear: unset;
-  },
-  .lista-productos li:nth-last-child(3n+1) {
+  }
+  .lista-productos li:nth-child(3n+1) {
     clear: both;
   }
 }
-
-.lista-productos li img{
+.lista-productos li img {
   border: 1rem solid rgba(128, 1, 195, 0.45);
-  transition: border-color .3s ease-in-out;
+  transition: border-color 0.3s ease-in-out;
 }
 .lista-productos li img:hover {
   border: 1rem solid rgba(128, 1, 195, 1);
